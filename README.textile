@@ -1,0 +1,8 @@
+This is my emacs configuration.  I do not pretend to be knowledgable in the fine arts of elisp and emacs configuration.  Thus most things here were taken from people far more masteful than me - I've just organized them in a way that better suits me.
+
+The primary influences are:
+
+* Jim Weirich - http://github.com/jimweirich/emacs-setup/tree/master
+* Phil Hagelberg's "Emacs Starter Kit":http://github.com/technomancy/emacs-starter-kit/tree/master
+
+The layout of my files is very much Jim's design while the contents of the files are a combination of Jim and Phil.
