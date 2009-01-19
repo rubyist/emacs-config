@@ -54,3 +54,5 @@
 (setq indent-tabs-mode nil)
 (setq make-backup-files nil)
 (auto-save-mode nil)
+
+(column-number-mode t)
