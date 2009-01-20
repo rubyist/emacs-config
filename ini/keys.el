@@ -32,3 +32,5 @@
 (global-set-key (kbd "C-x M") (lambda () (interactive) (eshell t)))
 
 (global-set-key (kbd "C-x M-m") 'shell)
+
+(global-set-key (kbd "\C-x g") 'magit-status)
