@@ -15,4 +15,6 @@
 ;; Load configurations
 (require 'load-ini)
 (load-ini-files)
+(load-private-files)
+
 (message "init loaded")

@@ -1,5 +1,6 @@
 ;;; config loading functions
 (setq ini-directory (concat dotfiles-dir "/ini"))
+(setq private-directory "~/.emacs.private")
 
 (defvar ini-loaded ()
   "List of files loaded during initialization")
@@ -35,6 +36,13 @@
   (let ((files (directory-files ini-directory nil ".*\\.el$")))
     (while (not (null files))
       (ini-load (substring (car files) 0 -3))
+      (setq files (cdr files)))))
+
+(defun load-private-files ()
+  "Load files from ~/.emacs.private"
+  (let ((files (directory-files private-directory nil ".*\\.el$")))
+    (while (not (null files))
+      (load-file (concat private-directory "/" (car files)))
       (setq files (cdr files)))))
 
 (provide 'load-ini)
