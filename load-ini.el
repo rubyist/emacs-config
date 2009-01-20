@@ -25,16 +25,16 @@
 (defun edit-ini-file (fn)
   "Open the ini file in a buffer for editing"
   (interactive "MIni file: ")
-  (let ((inifile (concat ini-directory "/" "ini-" fn ".el")))
+  (let ((inifile (concat ini-directory "/" fn ".el")))
     (if (file-readable-p inifile)
         (find-file inifile)
       (message "ini for %s not found" inifile))))
 
 (defun load-ini-files ()
   "Load all ini-* files"
-  (let ((files (directory-files ini-directory nil "^ini-.*\\.el$")))
+  (let ((files (directory-files ini-directory nil ".*\\.el$")))
     (while (not (null files))
       (ini-load (substring (car files) 0 -3))
       (setq files (cdr files)))))
 
-(provide 'ini-load)
+(provide 'load-ini)

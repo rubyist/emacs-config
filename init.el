@@ -13,6 +13,6 @@
 (add-to-list 'load-path (concat dotfiles-dir "/vendor"))
 
 ;; Load configurations
-(require 'ini-load)
+(require 'load-ini)
 (load-ini-files)
 (message "init loaded")
