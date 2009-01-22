@@ -1,0 +1,6 @@
+#name : shoulda context
+#contributor : Scott Barron
+# --
+context "$1" do
+  $0
+end

@@ -1,0 +1,6 @@
+#name : shoulda should
+#contributor : Scott Barron
+# --
+should "$1" do
+  $0
+end
