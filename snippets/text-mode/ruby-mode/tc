@@ -1,0 +1,6 @@
+#name : test case
+# --
+class ${1:$
+          (ruby-classify (ruby-capitalize (buffer-file-name)))} < Test::Unit::TestCase
+  $0
+end

@@ -1,0 +1,6 @@
+#name : class ... end
+# --
+class ${1:$
+         (ruby-classify (ruby-capitalize (buffer-file-name)))}
+  $0
+end

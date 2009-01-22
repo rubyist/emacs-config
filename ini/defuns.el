@@ -34,3 +34,13 @@
   (let ((file (ido-completing-read "Choose recent file: " recentf-list nil t)))
     (when file
       (find-file file))))
+
+(defun ruby-capitalize (fn)
+  (capitalize (file-name-nondirectory
+               (file-name-sans-extension fn))))
+
+(defun ruby-classify (fn)
+  (interactive)
+  (cond
+   ((string-match "_" fn) (ruby-classify (replace-match "" nil nil fn)))
+   (t fn)))
