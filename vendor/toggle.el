@@ -53,6 +53,8 @@
 ;; blah.rb <-> test_blah.rb
 ;; lib/blah.rb <-> test/test_blah.rb
 
+;; Classes/Blah.m <-> UnitTests/BlahTest.m
+
 ;;; History:
 
 ;; 1.3.1 2008-09-25 Fixed doco & typo in rspec patterns.
@@ -88,7 +90,8 @@
                 ("app/models/\\1.rb"      . "test/unit/\\1_test.rb")
                 ("lib/\\1.rb"             . "test/unit/test_\\1.rb")))
     (ruby    . (("lib/\\1.rb"             . "test/test_\\1.rb")
-                ("\\1.rb"                 . "test_\\1.rb"))))
+                ("\\1.rb"                 . "test_\\1.rb")
+                ("Classes/\\1.m"          . "UnitTests/\\1Test.m"))))
   "A list of (name . toggle-mapping) rules used by toggle-filename."
   :group 'toggle
   :type '(repeat (cons string string)))
