@@ -44,3 +44,15 @@
   (cond
    ((string-match "_" fn) (ruby-classify (replace-match "" nil nil fn)))
    (t fn)))
+
+(defun modeline-red ()
+  (interactive)
+  (set-face-background 'modeline "#FF0000"))
+
+(defun modeline-green ()
+  (interactive)
+  (set-face-background 'modeline "#00FF00"))
+
+(defun modeline-reset ()
+  (interactive)
+  (set-face-background 'modeline "#C9C9C9"))
