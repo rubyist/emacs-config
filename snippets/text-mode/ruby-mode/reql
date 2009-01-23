@@ -1,0 +1,3 @@
+#name : require lib file
+# --
+require File.join(File.dirname(__FILE__), '${1:$(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))}', '${2:file}')$0
