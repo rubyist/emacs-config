@@ -54,3 +54,4 @@
 (auto-save-mode nil)
 
 (column-number-mode t)
+(delete-selection-mode)
