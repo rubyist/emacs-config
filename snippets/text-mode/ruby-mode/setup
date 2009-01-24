@@ -1,0 +1,6 @@
+#name : shoulda setup
+#contributor : Scott Barron
+# --
+setup do
+  $0
+end
