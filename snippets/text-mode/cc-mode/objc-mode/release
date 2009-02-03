@@ -1,0 +1,3 @@
+# release: [foo release];
+# --
+[${1:foo} release];$0
