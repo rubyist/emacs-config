@@ -52,8 +52,11 @@
 (setq indent-tabs-mode nil)
 (setq make-backup-files nil)
 (auto-save-mode nil)
+(setq auto-save-default nil)
 
 (column-number-mode t)
 (delete-selection-mode)
 
 (add-hook 'before-make-frame-hook '(lambda () (tool-bar-mode -1)))
+
+(desktop-save-mode 1)
