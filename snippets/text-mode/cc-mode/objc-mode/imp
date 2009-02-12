@@ -1,0 +1,3 @@
+#name #import "Foo.h"
+# --
+#import "${1:Foo}.h"$0
