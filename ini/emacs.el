@@ -53,6 +53,7 @@
 (setq make-backup-files nil)
 (auto-save-mode nil)
 (setq auto-save-default nil)
+(setq backup-inhibited t)
 
 (column-number-mode t)
 (delete-selection-mode)
