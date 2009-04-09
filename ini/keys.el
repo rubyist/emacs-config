@@ -36,3 +36,5 @@
 (global-set-key (kbd "\C-x g") 'magit-status)
 
 (global-set-key (kbd "\C-c \C-t") 'toggle-buffer)
+
+(global-set-key (kbd "\C-x \C-m") 'execute-extended-command)
