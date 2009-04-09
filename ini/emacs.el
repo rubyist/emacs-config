@@ -59,5 +59,3 @@
 (delete-selection-mode)
 
 (add-hook 'before-make-frame-hook '(lambda () (tool-bar-mode -1)))
-
-(desktop-save-mode 1)
