@@ -61,3 +61,6 @@
 (add-hook 'before-make-frame-hook '(lambda () (tool-bar-mode -1)))
 
 (global-auto-revert-mode t)
+
+(set-default-font "-apple-Monaco-medium-normal-normal-*-16-*-*-*-m-0-iso10646-1")
+(modify-frame-parameters nil '((wait-for-wm . nil)))
