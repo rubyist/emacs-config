@@ -59,3 +59,5 @@
 (delete-selection-mode)
 
 (add-hook 'before-make-frame-hook '(lambda () (tool-bar-mode -1)))
+
+(global-auto-revert-mode t)
